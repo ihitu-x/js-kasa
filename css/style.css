@@ -1,0 +1,81 @@
+.wrapper {
+
+height: 100%;
+width: 1400px;
+margin: auto;
+}
+.doublescreen {
+  float: left;
+  width: 920px;
+  height: 650px;
+  margin-left: 20px;
+  position: relative;
+}
+.screen {
+  width: 450px;
+  height: 600px;
+  background-color: #F1F1F1;
+  float: left;
+  position: relative;
+  margin: 0 5px;
+}
+
+h1 {
+  margin: 0;
+}
+h2{
+  margin: 0;
+  display: inline;
+}
+.naslovniRed {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing:
+  border-box; box-sizing: border-box;
+}
+
+.ukupnoRed {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing:
+  border-box; box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+}
+
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}

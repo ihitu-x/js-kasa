@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Naslov!</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="screen">
+    <fieldset id="forma">
+    <legend>Unos Novog Artikla</legend>
+    <label> Naziv Artikla: </label>
+    <input type="text" name="naziv" value="unesite naziv" id="nazArt"><br/>
+
+    <label> Cijena Artikla(kn):</label>
+    <input type="text" name="cijena" value="" id="cijArt"><br/>
+
+    <label> Kolicina:</label>
+    <input type="text" name="kolicina" value="" id="kolArt"><br/><br/>
+
+    <input type="button" name="name" value="Dodaj U prehrambene" onclick="dodajArtikal('prehrana')"><br/>
+    <input type="button" name="name" value="Dodaj U ostalo" onclick="dodajArtikal('ostalo')">
+  </fieldset>
+
+    <p id="myText"></p>
+  </div>
+  <div class="doublescreen">
+
+      <div class="screen">
+
+          <div class="naslovniRed">
+            <h1>Prehrana</h1>
+          </div>
+            <table id="prehrana">
+              <tr>
+                <th>Naziv</th>
+                <th>Cijena</th>
+                <th>Kolicina</th>
+                <th>Ukupno</th>
+              </tr>
+            </table>
+
+            <div class="ukupnoRed">
+              <h2>Prehrana ukupno:</h2> <h2 id="prehUk">0 kn</h2>
+            </div>
+        </div>
+      <div class="screen">
+
+            <div class="naslovniRed">
+              <h1>Ostalo</h1>
+            </div>
+              <table id="ostalo">
+                <tr>
+                  <th>Naziv</th>
+                  <th>Cijena</th>
+                  <th>Kolicina</th>
+                  <th>Ukupno</th>
+                </tr>
+              </table>
+
+              <div class="ukupnoRed">
+                <h2>Ostalo ukupno:</h2> <h2 id="ostUk">0 kn</h2>
+              </div>
+          </div>
+      <div class="ukupnoRed">
+        <h2>Ukupno:</h2> <h2 id="sveUk">0 kn</h2>
+      </div>
+
+
+  </div>
+</div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
